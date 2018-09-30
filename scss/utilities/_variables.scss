@@ -1,0 +1,118 @@
+//VARIABLES
+//
+
+
+
+// ===============================================
+// =================FONTS=========================
+
+
+// FONT STACKS
+
+$font-url        :  "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+$stack-lato      :  'Lato', sans-serif;
+
+// FONT WEIGHT
+
+$font-wt-thin        : 100;
+$font-wt-light       : 300;
+$font-wt-regular     : 400;
+$font-wt-bold        : 700;
+$font-wt-bolder      : 900;
+
+// FONT SIZE
+
+$base-font-size: 16px;
+
+// ===============================================
+// =================COLORS========================
+
+//Name that color http://chir.ag/projects/name-that-color/#E59061
+
+$white         :#FFF;
+$grey          :#808080;
+$black         :#181616;
+
+// THEME COLORS
+
+$emerald       :#50C878;  //success btn
+$java          :#28DCB8;  //typography btn
+$spray         :#3DDBDB;  //login btn & default btn
+$flamingo      :#F4621A;  //warning btn
+$roman         :#DA5652;  //error btn
+$studio        :#8451A9;  //info btn
+$magic-ment    :#8FF0CB;  //grid__col--12
+$matisse       :#146FA3;  //grid__col--6
+$malibu        :#56DEF5;  //gril__col--4
+$perfume       :#D3A2F6;  //grid__col--3
+$apple         :#51BA4F;  //gril__col--5
+$sunglo        :#DF6F6D;  //grid__col--7
+$apricot       :#E59061;  //grid__col--8
+
+$grid-colors: (
+    $emerald,   //grid__col--1 (placeholder color)
+    $java,      //grid__col--2 (placeholder color)
+    $perfume,   //grid__col--3
+    $malibu,    //grid__col--4
+    $apple,     //grid__col--5
+    $matisse,   //grid__col--6
+    $sunglo,    //grid__col--7
+    $apricot,   //grid__col--8
+    $flamingo,  //grid__col--9  (placeholder color)
+    $roman,     //grid__col--10 (placeholder color)
+    $studio,    //grid__col--11 (placeholder color)
+    $magic-ment //grid__col--12
+);
+
+
+
+
+// BASE COLORS
+$primary-color     : $java;
+$secondary-color   : $malibu; 
+
+
+// PALETTES
+
+$color-palettes: (
+    grey: (
+            xx-light: lighten($grey, 45%),
+             x-light: lighten($grey, 35%),
+                base: $grey,
+              x-dark: darken($grey, 35%),
+             xx-dark: darken($grey, 45%),
+    )
+);
+
+
+// UI COLORS 
+
+$ui-colors: (
+    success    : $emerald,
+    error      : $roman,
+    warning    : $flamingo,
+    info       : $studio,
+    default    : $spray,
+);
+
+// ===============================================
+// =================BREAKPOINTS===================
+
+$brkpoint-sm      : 1px;
+$brkpoint-md      : 768px;
+$brkpoint-lg      : 1100px;
+
+
+// ===============================================
+// =================IMG PATHS=====================
+
+$path-img   :  '../images';
+
+// ===============================================
+// =================GRID==========================
+
+$g-col-width    : 65px; 
+$g-gutter-width : 20px;  
+$g-col-count    : 12;  
+$g-cont-max-w   : 1050px; 
+

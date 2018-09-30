@@ -1,0 +1,58 @@
+
+@if variable-exists(font-url) {
+    @import url($font-url);
+  }
+
+.container {
+    @extend %margin-auto;
+    font-family: $stack-lato;
+    width: 85%;
+}
+
+.headline {
+    @include m(primary) {
+        color: $primary-color;
+        font-weight: $font-wt-bolder;
+        width: 75%;
+        margin-top: 0;
+        margin-bottom: px(15px);
+        padding-left: px(15px);
+        
+    }
+    @include m(secondary){
+        font-size: px(20px);
+        font-weight: $font-wt-light;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+        color: $grey;
+        @include mq(medium) {
+            margin-top: px(50px);
+        }
+    }
+}
+
+.card {
+    p {
+        @extend %margin-auto;
+        @extend %card-padding;
+        font-size: px(18px);
+        color: palette(grey);
+    }
+}
+
+.link {
+    color: $secondary-color;
+    font-weight: $font-wt-bolder;
+    text-decoration: none;
+}
+
+.blockquote {
+    border-left: px(6px) solid $primary-color;
+    border-top-left-radius: px(5px);
+    border-bottom-left-radius: px(5px);
+    padding-left: px(15px);
+    margin: 0 px(15px) px(40px);
+    font-style: italic;
+    font-size: px(20px);
+    color: $grey;
+}

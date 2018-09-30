@@ -1,0 +1,64 @@
+
+
+// ===============Screen Readers======================//
+
+%srt {
+    visibility: hidden;
+}
+
+
+// ===============Buttons======================//
+
+%btn {
+    width: 100%;
+    padding: 0.75em 0;
+    font-family: $stack-lato;
+    font-weight: $font-wt-bold;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    @include flex(flex, column) {
+        align-items: center;
+        margin-bottom: px(20px);
+    }
+}
+
+// ===============Grid======================//
+
+%grid-styles {
+    padding: 0.95em 0 0.95em px(15px);
+    font-family: $stack-lato;
+    border: none;
+    border-radius: px(5px);
+    color: $grey;
+    font-weight: $font-wt-bold;
+}
+
+// =============== HELPERS ======================//
+
+//Centered
+%centered {
+    text-align: center;
+}
+
+//Remove underline from links
+%text-dec-none {
+    text-decoration: none;
+}
+
+//Margin auto 
+%margin-auto {
+    margin: 0 auto;
+}
+
+//Nav padding and margin
+%nav-padding-margin {
+    margin: 0.75em 0;
+    padding: 0.75em 0;
+}
+
+%card-padding {
+    padding: 0.9375em;
+}
+
