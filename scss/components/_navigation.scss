@@ -1,0 +1,28 @@
+
+.nav {
+    @extend %centered;
+    padding: 0 0 px(70px, 16px);
+    margin: 0;
+    @include mq(medium) {
+        @include flex(flex, row, $just: space-around);
+        width: 60%;
+        margin: px(65px) 0 0 px(200px);
+    }
+
+    @include e(item) {  
+        border-radius: 5px;
+        padding: px(12px) px(10px);
+
+        a {
+            @extend %text-dec-none;
+            color: black;
+        }
+       
+        &:first-child  {
+            background-color: $primary-color;
+            a {
+                color: $white;
+            }
+        }
+    }
+}

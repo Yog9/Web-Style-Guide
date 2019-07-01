@@ -1,0 +1,67 @@
+
+@for $i from 1 through $g-col-count {
+    .grid__col--#{$i}.theme__colors{
+        @extend %grid-styles;
+        margin: 0 px(5px) px(50px);
+        &:last-of-type {
+            margin-bottom: px(50px);
+        }
+
+        //margin for grid system
+        @include mq(small) {
+            margin-bottom: px(5px);
+            // margin-right: px(15px);
+            &:last-child {  
+                margin-bottom: px(40px);  
+            }          
+        }
+    }
+}
+
+
+//grid max-width
+@include mq(medium) {
+    @for $i from 1 through $g-col-count {
+
+    $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+    $target: ($g-col-width * $i)  +  ($g-gutter-width * ($i - 1));
+
+        .grid__col--#{$i}{
+            width: percentage($target, $context);
+        }
+    }
+}
+
+
+//flex for grids
+
+.grid {
+    @include mq(medium) {
+        @include e(row) {
+            @include flex(flex, $just: space-between);
+            .centered {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
+    //background color for each grid__col in grid system
+    &__col {
+        @include grid-background-color;
+    }
+}
+
+//button grid
+
+.grid__col {
+    @include mq(medium) {
+        @include m(12) {
+            .theme__colors {
+                margin: 1.875em 1em;
+            }
+            @include flex(flex);
+        }
+    }
+}
+
